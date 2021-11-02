@@ -1,0 +1,97 @@
+/* ============================GENERAL=====================================*/
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+}
+/* ============================CARD=====================================*/
+.container {
+  display: flex;
+  color: white;
+  justify-content: center;
+  height: 25em;
+}
+
+.left_part {
+  width: 30em;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.left_part h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.color-text {
+  color: hsl(277, 64%, 61%);
+}
+
+.left_part p {
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  margin: auto;
+  padding-top: 1em;
+
+  font-size: 14px;
+}
+
+.left_part .text p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.text {
+  height: 20em;
+}
+.text,
+.statistics {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.statistics {
+  height: 15em;
+  font-size: 14px;
+  display: flex;
+}
+
+.statistics p:first-child {
+  margin-left: 0;
+}
+
+.statistics p:last-child {
+  margin-right: 0;
+}
+
+.number-weight {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.right_part img {
+  filter: opacity(0.4) drop-shadow(0 0 0 hsl(277, 64%, 61%));
+  width: 30em;
+  height: 25em;
+}
+
+/* ============================FOOTER=====================================*/
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  height: 2em;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.attribution a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
