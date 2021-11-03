@@ -1,4 +1,8 @@
 /* ============================GENERAL=====================================*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: hsl(233, 47%, 7%);
   font-size: 15px;
@@ -9,6 +13,10 @@ body {
   color: white;
   justify-content: center;
   height: 25em;
+}
+
+.mobile_image {
+  display: none;
 }
 
 .left_part {
@@ -71,8 +79,12 @@ body {
   font-weight: 700;
 }
 
-.right_part img {
-  filter: opacity(0.4) drop-shadow(0 0 0 hsl(277, 64%, 61%));
+.right_part {
+  display: flex;
+  filter: opacity(0.5) drop-shadow(0 0 0 hsl(277, 64%, 61%));
+  background-image: url("images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 30em;
   height: 25em;
 }
@@ -84,7 +96,6 @@ body {
   bottom: 0;
   height: 2em;
   width: 100%;
-  background-color: gray;
   color: white;
   font-size: 18px;
   letter-spacing: 2px;
@@ -94,4 +105,77 @@ body {
 a:visited {
   text-decoration: none;
   color: white;
+}
+
+/* ============================MOBILE=====================================*/
+
+@media screen and (max-width: 675px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    border-radius: 500;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+  }
+
+  .mobile_image {
+    display: block;
+    background-image: url("images/image-header-mobile.jpg");
+    filter: opacity(0.5) drop-shadow(0 0 0 hsl(277, 64%, 61%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .left_part {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .text {
+    height: fit-content;
+  }
+
+  .left_part h2 {
+    font-size: 20px;
+  }
+
+  .left_part p {
+    font-size: 14px;
+  }
+
+  .right_part {
+    display: none;
+  }
+
+  .statistics {
+    flex-direction: column;
+  }
+
+  .statistics p {
+    text-align: center;
+  }
+
+  .statistics p:first-child {
+    margin-left: auto;
+  }
+
+  .statistics p:last-child {
+    margin-right: auto;
+    padding-bottom: 1em;
+  }
+  .attribution {
+    position: relative;
+    height: auto;
+    font-size: 90%;
+    margin-bottom: 2.5em;
+    margin-top: 2em;
+  }
 }
