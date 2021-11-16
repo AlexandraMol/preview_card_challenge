@@ -6,9 +6,21 @@
 body {
   background-color: hsl(233, 47%, 7%);
   font-size: 15px;
+  padding: 0;
+  margin: 0;
 }
 /* ============================CARD=====================================*/
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 .container {
+  width: 100%;
   display: flex;
   color: white;
   justify-content: center;
@@ -26,6 +38,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: justify;
+  border-radius: 10px 0 0 10px;
 }
 
 .left_part h2 {
@@ -74,6 +87,10 @@ body {
   margin-right: 0;
 }
 
+.statistics p {
+  text-transform: uppercase;
+}
+
 .number-weight {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -87,21 +104,20 @@ body {
   background-size: cover;
   width: 30em;
   height: 25em;
+  border-radius: 0 10px 10px 0;
 }
 
 /* ============================FOOTER=====================================*/
 
-.attribution {
-  position: fixed;
-  bottom: 0;
-  height: 2em;
-  width: 100%;
+footer {
+  height: 6em;
+  padding-top: 1em;
   color: white;
   font-size: 18px;
   letter-spacing: 2px;
   text-align: center;
 }
-.attribution a:link,
+footer a:link,
 a:visited {
   text-decoration: none;
   color: white;
@@ -171,11 +187,7 @@ a:visited {
     margin-right: auto;
     padding-bottom: 1em;
   }
-  .attribution {
-    position: relative;
-    height: auto;
+  footer {
     font-size: 90%;
-    margin-bottom: 2.5em;
-    margin-top: 2em;
   }
 }

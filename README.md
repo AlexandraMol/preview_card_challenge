@@ -6,13 +6,11 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 
 ## Overview
 
@@ -21,12 +19,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-
-### Screenshot
-
-![Desktop version](./design/desktop-final.png)
-
-![Mobile version](./design/mobile-final.png)
 
 ### Links
 
@@ -48,7 +40,3 @@ This challenge helped me understand CSS properties better. Also, it was a good o
 ### Useful resources
 
 - [Flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This helped me with understanding how flexbox works. I'd recommend it to anyone still learning this concept.
-
-## Author
-
-- Frontend Mentor - [@AlexandraMol](https://www.frontendmentor.io/profile/AlexandraMol)
